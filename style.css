@@ -13,6 +13,7 @@ body {
     font-family: "Yugioh", serif;
     background-image: url(imagens/imagens/fundo-site.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 ul {
@@ -20,7 +21,6 @@ ul {
 }
 
 .cabecalho {
-    background-color: red;
     color: white;
     display: flex;
     justify-content: center;
@@ -29,6 +29,9 @@ ul {
 .cartao {
     opacity: 0;
     display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 5px;
 }
 
 .cartao.selecionado {
@@ -38,4 +41,100 @@ ul {
 .lista-personagens {
     width: 300px;
     height: 500px;
+    border-radius: 10px;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 132px;
+}
+
+.cartao .nome {
+    font-size: 13px;
+    padding: 5px;
+    text-transform: uppercase;
+    background: radial-gradient(circle, #f3e2c8, #e4cfa5, #c4a57a);
+    border: 2px solid #a67c52;
+    border-radius: 4px;
+}
+
+.cartao .estrela {
+    width: 20px;
+    height: 20px;
+    background-image: url(imagens/imagens/nivel-carta.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.cartao .nivel-carta {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    gap: 5px;
+}
+
+.cartao , .imagem-carta {
+    max-width: 260px;
+    align-self: center;
+}
+
+.cartao .informacoes {
+    border-radius: 5px;
+    max-width: 300px;
+    color: black;
+    background: radial-gradient(circle, #f3e2c8, #e4cfa5, #c4a57a);
+    border: 2px solid #a67c52;
+    text-align: left;
+    line-height: 1.5;
+    padding: 5px;
+}
+
+.cartao .informacoes .informacoes-ataque {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    padding: 10px;
+}
+
+.cartao .informacoes .informacoes-ataque span {
+    font-size: 13px;
+}
+
+.cartao .informacoes .descricao {
+    border-bottom: 1px solid black;
+    padding: 10px;
+    max-height: 95px;
+    overflow-y: scroll;
+    font-size: 13px;
+}
+
+.fundo-1 {
+    background: url(imagens/imagens/fundo-1.jpg) no-repeat;
+}
+
+.fundo-2 {
+    background: url(imagens/imagens/fundo-2.jpg) no-repeat;
+}
+
+.fundo-3 {
+    background: url(imagens/imagens/fundo-3.jpg) no-repeat;
+}
+
+.fundo-4 {
+    background: url(imagens/imagens/fundo-4.jpg) no-repeat;
+}
+
+.fundo-5 {
+    background: url(imagens/imagens/fundo-5.jpg) no-repeat;
+}
+
+.fundo-6 {
+    background: url(imagens/imagens/fundo-6.jpg) no-repeat;
+}
+
+.fundo-7 {
+    background: url(imagens/imagens/fundo-7.jpg) no-repeat;
 }
