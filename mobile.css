@@ -35,3 +35,15 @@
         left: 20%;
     }
 }
+
+@media(max-width: 375px) {
+    body {
+        justify-content: start;
+        padding-top: 10px;
+        gap: 10px;
+    }
+
+    .cabecalho {
+        font-size: 12px;
+    }
+}
