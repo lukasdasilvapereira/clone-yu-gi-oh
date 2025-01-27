@@ -1,7 +1,7 @@
-const avancando = document.getElementById("btn-avancar")
+const avancando = document.querySelector(".btn-avancar")
 const cartoes = document.querySelectorAll(".cartao")
 let cartaoatual = 0
-const voltando = document.getElementById("btn-voltar")
+const voltando = document.querySelector(".btn-voltar")
 
 avancando.addEventListener("click", function() {
 
@@ -26,7 +26,6 @@ voltando.addEventListener("click", function() {
     const cartaoselecionado = document.querySelector(".selecionado")
     cartaoselecionado.classList.remove("selecionado")
 
-    cartaoatual++
-    cartoes[cartaoatual].classList.add("selecionado"
-    )
+    cartaoatual--
+    cartoes[cartaoatual].classList.add("selecionado")
 })
